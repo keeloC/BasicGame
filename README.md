@@ -30,3 +30,4 @@ The difficulty increases over time as enemies get faster.
 ```bash
 g++ main.cpp -o game -lsfml-graphics -lsfml-window -lsfml-system
 ```
+Post data: I program from Linux, but I can also program for Windows; I mean, compile static and dynamic .exe files.
