@@ -14,7 +14,9 @@ int main() {
   sf::RenderWindow window(sf::VideoMode({800, 600}), "Esotilin Juego");
   window.setFramerateLimit(60);
 
-  sf::RectangleShape player(sf::Vector2f(30.f, 30.f));
+  float playerSize = 5.f;
+
+  sf::RectangleShape player(sf::Vector2f(playerSize, playerSize));
   player.setFillColor(sf::Color::Green);
   player.setPosition({
       window.getSize().x / 2.f - player.getSize().x / 2.f,
@@ -22,7 +24,7 @@ int main() {
   });
   // speed
 
-  float speed = 15.f;
+  float speed = 13.f;
   float Espeed = 2.f;
 
   // numero de enemigos
