@@ -10,9 +10,9 @@ int main() {
   sf::RenderWindow window(sf::VideoMode(800, 600), "Esotilin Juego");
   window.setFramerateLimit(60);
 
-  float playerSize = 5.f;
+  float hola = 5.f;
 
-  sf::RectangleShape player(sf::Vector2f(playerSize, playerSize));
+  sf::RectangleShape player(sf::Vector2f(hola, hola));
   player.setFillColor(sf::Color::Green);
 
   player.setPosition(window.getSize().x / 2.f - player.getSize().x / 2.f,
@@ -168,7 +168,6 @@ int main() {
           enemies[i].setPosition(enemies[i].getPosition().x, 600.f);
         }
 
-        // colision jugador
         if (player.getGlobalBounds().intersects(enemies[i].getGlobalBounds())) {
 
           player.setPosition(
