@@ -10,9 +10,9 @@ int main() {
   sf::RenderWindow window(sf::VideoMode(800, 600), "Esotilin Juego");
   window.setFramerateLimit(60);
 
-  float hola = 5.f;
+  float SizePlayer = 5.f;
 
-  sf::RectangleShape player(sf::Vector2f(hola, hola));
+  sf::RectangleShape player(sf::Vector2f(SizePlayer, SizePlayer));
   player.setFillColor(sf::Color::Green);
 
   player.setPosition(window.getSize().x / 2.f - player.getSize().x / 2.f,
