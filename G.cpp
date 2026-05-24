@@ -5,6 +5,7 @@
 #include <string>
 #include <utility>
 #include <vector>
+
 int main() {
   sf::RenderWindow window(sf::VideoMode(800, 600), "Esotilin Juego");
   window.setFramerateLimit(60);
